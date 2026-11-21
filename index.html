@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Glee Club Checker</title>
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2024.1.1/core.css">
+    <script type="module" src="https://pyscript.net/releases/2024.1.1/core.js"></script>
+
+    <style>
+        body {
+            background: #111;
+            color: gold;
+            font-family: Arial;
+            text-align: center;
+            padding: 30px;
+        }
+
+        input, button {
+            display: block;
+            margin: 15px auto;
+            padding: 12px;
+            width: 250px;
+        }
+
+        button {
+            background: crimson;
+            color: white;
+            border: 1px solid gold;
+            cursor: pointer;
+        }
+
+        #result {
+            margin: 20px;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>GLEE CLUB CHECKER</h1>
+    <p>Candidate Verification System</p>
+
+    <input type="text" id="first" placeholder="First Name">
+    <input type="text" id="last" placeholder="Last Name">
+
+    <button py-click="check_member">ENTER</button>
+
+    <h3 id="result"></h3>
+
+    <script type="py" src="main.py"></script>
+</body>
+</html>
